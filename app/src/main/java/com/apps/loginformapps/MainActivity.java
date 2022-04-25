@@ -13,7 +13,8 @@ import androidx.appcompat.app.AppCompatActivity;
 public class MainActivity extends AppCompatActivity {
 
     EditText username, password;
-    Button btnLogin;
+    Button btnLogin, btnRegister;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.username);
         password = (EditText) findViewById(R.id.password);
-        btnLogin = (Button)findViewById(R.id.btnLogin);
+        btnLogin = (Button) findViewById(R.id.btnLogin);
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -30,14 +31,14 @@ public class MainActivity extends AppCompatActivity {
                 String usernameKey = username.getText().toString();
                 String passwordKey = password.getText().toString();
 
-                if (usernameKey.equals("mobile") && passwordKey.equals("123")){
+                if (usernameKey.equals("mobile") && passwordKey.equals("123")) {
                     //jika login berhasil
                     Toast.makeText(getApplicationContext(), "LOGIN SUKSES",
                             Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, WelcomeActivity.class);
                     MainActivity.this.startActivity(intent);
                     finish();
-                }else {
+                } else {
                     //jika login gagal
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
                     builder.setMessage("Username atau Password Anda salah!")
@@ -46,6 +47,14 @@ public class MainActivity extends AppCompatActivity {
             }
 
         });
-
+        btnRegister = (Button)findViewById(R.id.btnRegister);
+        btnRegister.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, FormRegister.class);
+                MainActivity.this.startActivity(intent);
+                finish();
+            }
+        });
     }
 }

@@ -17,117 +17,70 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:background="@drawable/tombol_bulat"
-        android:text="WELCOME"
+        android:text="Page Profile"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="30sp"
         android:textStyle="normal|bold" />
 
+    <ImageView
+        android:id="@+id/gmbr"
+        android:layout_marginTop="45dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/profil"
+        android:layout_marginLeft="100dp"/>
+
     <TextView
-        android:id="@+id/text"
-        android:layout_width="match_parent"
+        android:id="@+id/txtuser"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/textView"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp"
-        android:text="Form Pengajuan Beasiswa, silahkan diisi :"
-        android:textColor="@color/kuning"
-        android:textSize="18dp"
-        android:textStyle="normal|bold" />
+        android:layout_below="@+id/gmbr"
+        android:layout_marginTop="10dp"
+        android:text="User : Hana11"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
-    <TableRow
-        android:paddingTop="10dp"
-        android:id="@+id/nim"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtnim"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/text">
+        android:layout_below="@+id/txtuser"
+        android:layout_marginTop="10dp"
+        android:text="NIM : 191103544"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
-        <TextView
-            android:layout_width="83dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="NIM"
-            android:textColor="@color/kuning"
-            android:textStyle="normal|bold" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:drawable/dialog_holo_light_frame" />
-    </TableRow>
-
-    <TableRow
+    <TextView
         android:id="@+id/nama"
-        android:layout_width="match_parent"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nim">
+        android:layout_below="@+id/txtnim"
+        android:layout_marginTop="10dp"
+        android:text="Nama : Hana Umniyati R"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
-        <TextView
-            android:layout_width="83dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Name"
-            android:textStyle="normal|bold"
-            android:textColor="@color/kuning"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:drawable/dialog_holo_light_frame" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/kelas"
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/alamat"
+        android:layout_width="349dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/nama">
-
-        <TextView
-            android:layout_width="83dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Class"
-            android:textStyle="normal|bold"
-            android:textColor="@color/kuning"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:drawable/dialog_holo_light_frame" />
-    </TableRow>
-
-    <TableRow
-        android:id="@+id/smt"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/kelas">
-
-        <TextView
-            android:layout_width="83dp"
-            android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:text="Semester"
-            android:textStyle="normal|bold"
-            android:textColor="@color/kuning"/>
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@android:drawable/dialog_holo_light_frame" />
-    </TableRow>
+        android:layout_below="@+id/nama"
+        android:layout_marginTop="10dp"
+        android:text="Alamat : Perum 4"
+        android:textSize="20dp"
+        android:textStyle="normal" />
 
     <Button
-        android:text="Save"
+        android:text="Close"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/text"
+        android:gravity="center"
         android:layout_centerHorizontal="true"
         android:id="@+id/btnExit"
-        android:layout_marginTop="350dp"
+        android:layout_marginTop="400dp"
         android:background="@drawable/tombol_bulat"/>
+
+
 
 </RelativeLayout>
