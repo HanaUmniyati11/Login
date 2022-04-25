@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="50dp"
+    android:background="@color/ijo">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/tombol_bulat"
+        android:text="WELCOME"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="normal|bold" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:text="Form Pengajuan Beasiswa, silahkan diisi :"
+        android:textColor="@color/kuning"
+        android:textSize="18dp"
+        android:textStyle="normal|bold" />
+
+    <TableRow
+        android:paddingTop="10dp"
+        android:id="@+id/nim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="NIM"
+            android:textColor="@color/kuning"
+            android:textStyle="normal|bold" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nim">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Name"
+            android:textStyle="normal|bold"
+            android:textColor="@color/kuning"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/kelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/nama">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Class"
+            android:textStyle="normal|bold"
+            android:textColor="@color/kuning"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/smt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/kelas">
+
+        <TextView
+            android:layout_width="83dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Semester"
+            android:textStyle="normal|bold"
+            android:textColor="@color/kuning"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:drawable/dialog_holo_light_frame" />
+    </TableRow>
+
+    <Button
+        android:text="Save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnExit"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/tombol_bulat"/>
+
+</RelativeLayout>
